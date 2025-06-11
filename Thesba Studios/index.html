@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THESBA Studios - The Elevators Crowded… so we taking the stairs</title>
+    <meta name="description" content="THESBA Studios - A creative conglomerate amplifying voices and redefining entertainment across music, media, and beyond.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="Logo.jpg" type="image/jpg">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo" onclick="scrollToSection('home')">
+                
+                <span class="logo-text">THESBA STUDIOS</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" onclick="scrollToSection('home')">Home</a>
+                <a href="#artists" onclick="scrollToSection('artists')">Artists</a>
+                <a href="#events" onclick="scrollToSection('events')">Events</a>
+                <a href="#about" onclick="scrollToSection('about')">About</a>
+                <a href="#contact" onclick="scrollToSection('contact')">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="music-visualizer">
+                <div class="music-bar"></div>
+                <div class="music-bar"></div>
+                <div class="music-bar"></div>
+                <div class="music-bar"></div>
+                <div class="music-bar"></div>
+                <div class="music-bar"></div>
+                <div class="music-bar"></div>
+                <div class="music-bar"></div>
+            </div>
+            <h1 class="hero-title">THESBA</h1>
+            <p class="hero-subtitle">The Elevators Crowded… so we taking the stairs.</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="scrollToSection('about')">
+                    <i class="fas fa-play"></i> Discover More
+                </button>
+                <button class="btn btn-secondary" onclick="scrollToSection('contact')">
+                    <i class="fas fa-users"></i> Join THESBA
+                </button>
+            </div>
+        </div>
+        <div class="hero-background">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+        </div>
+    </section>
+
+    
+
+    <!-- Events Section -->
+    <section id="events" class="events">
+        <div class="container">
+            <h2 class="section-title">Upcoming Events</h2>
+            <p class="section-subtitle">Don't miss out on the hottest shows and drops</p>
+            <div class="events-list">
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">15</span>
+                        <span class="month">DEC</span>
+                    </div>
+                    <div class="event-info">
+                        <h3>THESBA Live Sessions</h3>
+                        <p class="location">Lagos, Nigeria</p>
+                        <p class="type">Live Performance</p>
+                    </div>
+                    <button class="btn btn-event">Get Tickets</button>
+                </div>
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">22</span>
+                        <span class="month">DEC</span>
+                    </div>
+                    <div class="event-info">
+                        <h3>New Album Drop</h3>
+                        <p class="location">All Platforms</p>
+                        <p class="type">Release</p>
+                    </div>
+                    <button class="btn btn-event">Listen Now</button>
+                </div>
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">05</span>
+                        <span class="month">JAN</span>
+                    </div>
+                    <div class="event-info">
+                        <h3>Behind The Music Series</h3>
+                        <p class="location">YouTube Premiere</p>
+                        <p class="type">Interview</p>
+                    </div>
+                    <button class="btn btn-event">Watch</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About THESBA</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>THESBA is a creative conglomerate founded by visionary artist and entrepreneur TELAI, with a bold mission to amplify voices and redefine the landscape of entertainment across music, media, and beyond.</p>
+                    <p>More than just a label or a studio, THESBA is a movement—built to empower rising talents, tell untold stories, and create culturally resonant experiences that shape the future of African creativity.</p>
+                    <p>From curated playlists to original content and disruptive campaigns, we're building a new wave—loud, intentional, and unapologetically different.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1598653222000-6b7b7a552625?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400" alt="THESBA Studios">
+                </div>
+            </div>
+            
+            <div class="services">
+                <h3>What We Do For Artists</h3>
+                <p class="services-subtitle">We create, curate, and elevate.</p>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <h4>Music & Playlists</h4>
+                        <p>We spotlight the hottest sounds with our curated playlists like Vibes & Bangers and Flows & Swag, giving you a front-row seat to Africa's evolving soundscape.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <h4>Media & Content</h4>
+                        <p>From raw interviews to game-changing visuals, we tell stories that hit different. Real voices, real moments, real impact.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h4>Creative Direction</h4>
+                        <p>Whether it's branding, visuals, or vibes, our creative team brings bold ideas to life for artists and brands who want to stand out.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4>Community & Culture</h4>
+                        <p>We're building more than just a platform—we're building a community. THESBA is home to dreamers, rebels, and culture shifters.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Get The Drop First</h2>
+            <p>Stay in the loop with exclusive releases, events, and behind-the-scenes content</p>
+            <form class="newsletter-form" id="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn btn-newsletter">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Ready to make your mark? Let's build something incredible together.</p>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Submit Your Demo</h3>
+                    <p>Join our artist community and get your music heard by industry professionals.</p>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <p><strong>Email</strong></p>
+                            <a href="mailto:sbastudios30@gmail.com">sbastudios30@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="social-media">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-tiktok"></i></a>
+                            <a href="#"><i class="fab fa-spotify"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <h3>Send Us a Message</h3>
+                    <form class="contact-form" id="contact-form">
+                        <input type="text" placeholder="Artist Name" required>
+                        <input type="email" placeholder="Email" required>
+                        <select required>
+                            <option value="">Select Subject</option>
+                            <option value="demo">Demo Submission</option>
+                            <option value="collaboration">Collaboration</option>
+                            <option value="media">Media Inquiry</option>
+                            <option value="general">General Question</option>
+                        </select>
+                        <textarea placeholder="Tell us about your music..." rows="4" required></textarea>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo-icon">SBA</div>
+                    <span class="logo-text">THESBA STUDIOS</span>
+                </div>
+                <p class="footer-tagline">The Elevators Crowded… so we taking the stairs.</p>
+                <div class="footer-nav">
+                    <a href="#home" onclick="scrollToSection('home')">Home</a>
+                    <a href="#artists" onclick="scrollToSection('artists')">Artists</a>
+                    <a href="#events" onclick="scrollToSection('events')">Events</a>
+                    <a href="#about" onclick="scrollToSection('about')">About</a>
+                    <a href="#contact" onclick="scrollToSection('contact')">Contact</a>
+                </div>
+                <p class="copyright">© 2024 THESBA Studios. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
