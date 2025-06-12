@@ -57,26 +57,37 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Contact form submission
-    const contactForm = document.getElementById('contact-form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const formData = new FormData(this);
-            const button = this.querySelector('button[type="submit"]');
-            const originalText = button.textContent;
-            
-            button.textContent = 'Sending...';
-            button.disabled = true;
-            
-            setTimeout(() => {
-                alert('Thank you for your message! We\'ll get back to you soon.');
-                this.reset();
-                button.textContent = originalText;
-                button.disabled = false;
-            }, 1000);
+   
+const contactForm = document.getElementById('contact-form');
+if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const formData = new FormData(this);
+        const button = this.querySelector('button[type="submit"]');
+        const originalText = button.textContent;
+        
+        button.textContent = 'Sending...';
+        button.disabled = true;
+
+        fetch('submit_form.php', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.text())
+        .then(data => {
+            alert('Thank you for your message! We\'ll get back to you soon.');
+            contactForm.reset();
+            button.textContent = originalText;
+            button.disabled = false;
+        })
+        .catch(error => {
+            alert('An error occurred. Please try again.');
+            button.textContent = originalText;
+            button.disabled = false;
         });
-    }
+    });
+}
 
     // Intersection Observer for animations
     const observerOptions = {
