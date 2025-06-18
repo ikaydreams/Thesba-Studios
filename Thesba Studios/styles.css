@@ -129,7 +129,7 @@ body {
 .floating-shape {
     position: absolute;
     border-radius: 50%;
-    background: #ffffff;
+    background: black;
     animation: float 6s ease-in-out infinite;
 }
 
@@ -179,7 +179,7 @@ body {
 
 .music-bar {
     width: 4px;
-    background: #ffffff;
+    background: black;
     border-radius: 2px;
     animation: musicBar 1.5s ease-in-out infinite alternate;
 }
@@ -204,6 +204,7 @@ body {
     margin-bottom: 1rem;
     letter-spacing: 3px;
     text-transform: uppercase;
+    color: black;
 }
 
 .hero-subtitle {
@@ -213,6 +214,7 @@ body {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    color: black;
 }
 
 .hero-buttons {
@@ -238,8 +240,8 @@ body {
 }
 
 .btn-primary {
-    background: #ffffff;
-    color: #000000;
+    background: black;
+    color: white;
 }
 
 .btn-primary:hover {
@@ -248,9 +250,9 @@ body {
 }
 
 .btn-secondary {
-    background: transparent;
+    background: black;
     color: #ffffff;
-    border: 2px solid #ffffff;
+    border: 2px solid black;
 }
 
 .btn-secondary:hover {
@@ -260,8 +262,8 @@ body {
 }
 
 .btn-event {
-    background: #ffffff;
-    color: #000000;
+    background: black;
+    color: white;
     padding: 0.5rem 1.5rem;
     font-size: 0.9rem;
 }
